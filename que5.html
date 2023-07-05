@@ -1,0 +1,45 @@
+<!-- Create a button as shown in the below image -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        button{
+            background-color: #e61313;
+            width: 150px;
+            height: 50px;
+            padding: 2px 8px;
+            border: none;
+            border-radius: 5px;
+            font-size: large;
+            z-index: 1;
+            position: absolute;
+            top: 20px;
+        }
+        .smallbox{
+            background-color: #000;
+            color: #fff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            width: 60px;
+            height: 20px;
+            position: relative;
+            top: -1px;
+            right: -110px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="bigbox">
+            <button><b>Buy Now</b></button>
+        </div>
+        <div class="smallbox"><span>15% Off</span></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- Design a customized dropdown menu as shown in the below image
+Initially, there should be a message displayed saying “Hover to show the dropdown” You can use the span tag or button tag to achieve this
+Once hovering the droHdown menu should be visible and there should be a horizontal scroll to view all the options
+You can achieve this by using the max-height HroHerty to restrict the height of the drop-down and the overflow property to get the vertical scroll bar to navigate between items -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .main{
+            position: relative;
+        }
+        span{
+            background-color: #e48c19;
+            padding: 15px 30px;
+        }
+
+        .opt{
+            background-color: #f5f3f3;
+            width: 213px;
+            height: 120px;
+            text-align: center;
+            font-size: 25px;
+            overflow-y: scroll;
+            position: absolute;
+            display: none;
+        }
+        .main:hover .opt{
+            display: block;
+        }
+        .select:hover{
+            background-color: #ece4e4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span>Hover To View Options </span>
+        <div class="opt">
+            <div class="select">Option 1</div>
+            <div class="select">Option 2</div>
+            <div class="select">Option 3</div>
+            <div class="select">Option 4</div>
+            <div class="select">Option 5</div>
+            <div class="select">Option 6</div>
+            <div class="select">Option 7</div>
+            <div class="select">Option 8</div>
+            <div class="select">Option 9</div>
+      </div>
+    </div>
+</body>
+</html>

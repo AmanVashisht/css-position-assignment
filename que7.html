@@ -1,0 +1,83 @@
+<!-- Create a simple Pokemon game as shown in the image below
+Initially, the webpage just display some hidden cards with a Pokemon image on them
+On hovering a card, that particular card just be displayed on the top so that the Pokemon image is visible
+Use z-index to achieve this output -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 5px;
+            padding: 30px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .pokemon1{
+            background-color: #ffff00;
+            width: 150px;
+            height: 260px;
+            border: 1px solid #000000;
+            z-index: 3;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .pokemon2{
+            background-color: #1d0dd6;
+            width: 150px;
+            height: 260px;
+            border: 1px solid #000000;
+            z-index: 1;
+            position: absolute;
+        }
+        .pokemon3{
+            background-color: #1df50e;
+            width: 150px;
+            height: 260px;
+            border: 1px solid #000000;
+            z-index: 2;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .pokemon2:hover{
+            z-index: 4;
+        }
+        .pokemon3:hover{
+            z-index: 4;
+        }
+        img{ 
+            text-align: center;
+            width: 130px;
+            height: 180px;
+            padding: 0px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover To Unveil The Pokemon</h1>
+    <div class="pokemon2">
+        <h2>Card 1</h2>
+        <img src="pokemon2.png" alt="pok2">
+    </div>
+    <div class="pokemon3">
+        <h2>Card 2</h2>
+        <img src="pokemon3.jpg" alt="pok3">
+    </div>
+    <div class="pokemon1">
+        <h2>Card 3</h2>
+        <img src="pokemon1.jpeg" alt="pok1">
+    </div>
+</body>
+</html>
